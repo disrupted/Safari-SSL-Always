@@ -93,7 +93,7 @@ RuleSet.prototype = {
     if (!this.targetPatterns) {
       this.targetPatterns = [];
       for (var i = 0; i < this.targets.length; i++) {
-        var targetPattern = this.targets[i].replace(/\./g, "\\.").replace("*", ".*")
+        var targetPattern = this.targets[i].replace(/\./g, "\\.").replace("*", ".*");
         this.targetPatterns.push(new RegExp(targetPattern));
       }
     }
